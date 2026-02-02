@@ -20,24 +20,18 @@
     .track {
       display: inline-flex;
       align-items: center;
-      gap: 40px;
+      gap: 48px;
       padding-left: 100%;
-      animation: scroll 30s linear infinite;
+      animation: scroll 28s linear infinite;
     }
 
     .item {
       display: inline-flex;
       align-items: center;
-      gap: 16px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 64px;
-      letter-spacing: 3px;
+      font-size: 42px;          /* ⬅️ reduced size */
+      letter-spacing: 2px;      /* ⬅️ tighter spacing */
       color: white;
-    }
-
-    .icon {
-      font-size: 36px;
-      opacity: 0.9;
     }
 
     @keyframes scroll {
@@ -54,11 +48,11 @@
 <body>
   <div class="marquee">
     <div class="track">
-      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
-      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
-      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
-      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
-      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
+      <div class="item">BROOKE WINSTEAD · 2026</div>
+      <div class="item">BROOKE WINSTEAD · 2026</div>
+      <div class="item">BROOKE WINSTEAD · 2026</div>
+      <div class="item">BROOKE WINSTEAD · 2026</div>
+      <div class="item">BROOKE WINSTEAD · 2026</div>
     </div>
   </div>
 </body>
