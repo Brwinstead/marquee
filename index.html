@@ -4,29 +4,40 @@
   <meta charset="UTF-8">
   <title>Marquee</title>
 
-  <!-- Bebas Neue font -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
+      background: transparent;
       overflow: hidden;
     }
 
     .marquee {
       width: 100%;
-      white-space: nowrap;
       overflow: hidden;
+      white-space: nowrap;
     }
 
-    .marquee span {
-      display: inline-block;
+    .track {
+      display: inline-flex;
+      align-items: center;
+      gap: 40px;
       padding-left: 100%;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 80px;
-      letter-spacing: 4px;
-      animation: scroll 20s linear infinite;
+      animation: scroll 30s linear infinite;
+    }
+
+    .item {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 64px;
+      letter-spacing: 3px;
       color: white;
+    }
+
+    .icon {
+      font-size: 36px;
+      opacity: 0.9;
     }
 
     @keyframes scroll {
@@ -39,12 +50,16 @@
     }
   </style>
 </head>
+
 <body>
-
   <div class="marquee">
-    <span>Brooke’s Urban Planning Portfolio</span>
+    <div class="track">
+      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
+      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
+      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
+      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
+      <div class="item">BROOKE WINSTEAD <span class="icon">✦</span> 2025</div>
+    </div>
   </div>
-
 </body>
 </html>
-
