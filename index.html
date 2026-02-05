@@ -20,18 +20,26 @@
     .track {
       display: inline-flex;
       align-items: center;
-      gap: 48px;
+      gap: 56px;
       padding-left: 100%;
-      animation: scroll 38s linear infinite;
+      animation: scroll 50s linear infinite; /* ⬅️ slowed down */
     }
 
     .item {
       display: inline-flex;
       align-items: center;
+      gap: 14px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 30px;          /* ⬅️ reduced size */
-      letter-spacing: 2px;      /* ⬅️ tighter spacing */
+      font-size: 30px;          /* keeping your size */
+      letter-spacing: 2px;
       color: white;
+      text-transform: uppercase;
+    }
+
+    .star {
+      color: #c62828; /* deep red star */
+      font-size: 22px;
+      line-height: 1;
     }
 
     @keyframes scroll {
@@ -48,24 +56,22 @@
 <body>
   <div class="marquee">
     <div class="track">
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
-      <div class="item">BROOKE WINSTEAD · 2026</div>
+      <div class="item">
+        BROOKE WINSTEAD <span class="star">★</span> URBAN PLANNING PORTFOLIO <span class="star">★</span> 2026
+      </div>
+      <div class="item">
+        BROOKE WINSTEAD <span class="star">★</span> URBAN PLANNING PORTFOLIO <span class="star">★</span> 2026
+      </div>
+      <div class="item">
+        BROOKE WINSTEAD <span class="star">★</span> URBAN PLANNING PORTFOLIO <span class="star">★</span> 2026
+      </div>
+      <div class="item">
+        BROOKE WINSTEAD <span class="star">★</span> URBAN PLANNING PORTFOLIO <span class="star">★</span> 2026
+      </div>
+      <div class="item">
+        BROOKE WINSTEAD <span class="star">★</span> URBAN PLANNING PORTFOLIO <span class="star">★</span> 2026
+      </div>
     </div>
   </div>
 </body>
 </html>
-
-
